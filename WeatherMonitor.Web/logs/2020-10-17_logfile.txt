@@ -1,0 +1,14 @@
+2020-10-17 20:22:24.5367 INFO Acessed GetAll().
+2020-10-17 20:22:27.5406 ERROR Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> IList`1
+System.Object -> System.Collections.Generic.IList`1[[WeatherMonitor.Web.DTOs.WeatherEntryDTO, WeatherMonitor.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] - 
+2020-10-17 20:23:05.8246 INFO Acessed GetAll().
+2020-10-17 20:23:07.7263 ERROR Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> IList`1
+System.Object -> System.Collections.Generic.IList`1[[WeatherMonitor.Web.DTOs.WeatherEntryDTO, WeatherMonitor.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] - 
+2020-10-17 21:09:24.8065 ERROR Cannot open database "WeatherMonitor" requested by the login. The login failed.
+Login failed for user 'LAPTOP-0H6ENUUF\eryxj'. - 

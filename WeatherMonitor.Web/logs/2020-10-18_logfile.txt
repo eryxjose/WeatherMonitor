@@ -1,0 +1,22 @@
+2020-10-18 23:51:25.5890 ERROR Error mapping types.
+
+Mapping types:
+Object -> IList`1
+System.Object -> System.Collections.Generic.IList`1[[WeatherMonitor.Web.DTOs.CityDTO, WeatherMonitor.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] - AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+City -> CityDTO
+WeatherMonitor.Web.Models.City -> WeatherMonitor.Web.DTOs.CityDTO
+
+Type Map configuration:
+City -> CityDTO
+WeatherMonitor.Web.Models.City -> WeatherMonitor.Web.DTOs.CityDTO
+
+Destination Member:
+Name
+
+ ---> System.FormatException: Input string was not in a correct format.
+   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
+   at lambda_method(Closure , Object , IList`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , IList`1 , ResolutionContext )
