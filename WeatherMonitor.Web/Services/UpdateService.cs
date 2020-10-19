@@ -44,7 +44,8 @@ namespace WeatherMonitor.Web.Services
                         WeatherEntry weatherEntry = new WeatherEntry
                         {
                             CityId = city.Id,
-                            WeatherJson = jsonResult
+                            WeatherJson = jsonResult,
+                            CreatedDate = DateTime.Now
                         };
                         dbContext.WeatherEntries.Add(weatherEntry);
                     }
