@@ -75,43 +75,6 @@ namespace WeatherMonitor.Web.Controllers
             }
         }
 
-        [HttpPost]
-        [ProducesResponseType(StatusCodes.Status201Created)]
-        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public async Task<IActionResult> Create([FromBody] WeatherEntryCreateDTO entity)
-        {
-            try
-            {
-                if (entity == null)
-                {
-                    _logger.LogWarn($"Invalid attempted to create a WeatherEntry with an empty data.");
-                    return BadRequest(ModelState);
-                }
-
-                if (!ModelState.IsValid)
-                {
-                    _logger.LogWarn($"Invalid attempted to create a Weather Entry. More details: {System.Environment.NewLine} {entity}");
-                    return BadRequest(ModelState);
-                }
-
-                var weatherEntry = _mapper.Map<WeatherEntry>(entity);
-                var isSuccess = await _repo.Create(weatherEntry);
-
-                if (!isSuccess)
-                {
-                    return InternalError($"Something wrong occurred. The City was not created.");
-                }
-
-                return Created("Create", new { weatherEntry });
-
-            }
-            catch (Exception ex)
-            {
-                return InternalError($"{ex.Message} - {ex.InnerException}");
-            }
-        }
-
         private ObjectResult InternalError(string message)
         {
             _logger.LogError(message);

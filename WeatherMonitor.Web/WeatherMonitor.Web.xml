@@ -17,13 +17,6 @@
             <param name="id"></param>
             <returns>Weather record.</returns>
         </member>
-        <member name="M:WeatherMonitor.Web.Controllers.CitiesController.Create(WeatherMonitor.Web.DTOs.CityCreateDTO)">
-            <summary>
-            Create a city.
-            </summary>
-            <param name="entity"></param>
-            <returns></returns>
-        </member>
         <member name="M:WeatherMonitor.Web.Controllers.WeatherEntriesController.GetWeatherEntries">
             <summary>
             Get all Weather Entries
