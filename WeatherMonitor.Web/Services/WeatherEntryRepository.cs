@@ -13,9 +13,9 @@ namespace WeatherMonitor.Web.Services
     {
         private readonly ApplicationDbContext _db;
 
-        public WeatherEntryRepository(ApplicationDbContext db)
+        public WeatherEntryRepository(ApplicationDbContext db = null)
         {
-            _db = db;
+            _db = db ?? new ApplicationDbContext(new DbContextOptions<ApplicationDbContext>());
         }
 
         public async Task<bool> Create(WeatherEntry entity)
