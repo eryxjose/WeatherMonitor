@@ -8,5 +8,6 @@ namespace WeatherMonitor.Web.Contracts
 {
     public interface IWeatherEntryRepository : IRepositoryBase<WeatherEntry>
     {
+        Task<IList<WeatherEntry>> FindByCityAndPeriod(string city, DateTime start, DateTime end);
     }
 }

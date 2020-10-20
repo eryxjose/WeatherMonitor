@@ -23,6 +23,15 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="M:WeatherMonitor.Web.Controllers.WeatherEntriesController.GetByCityAndPeriod(System.String,System.DateTime,System.DateTime)">
+            <summary>
+            Return weather entries by city and period
+            </summary>
+            <param name="city"></param>
+            <param name="startDate"></param>
+            <param name="endDate"></param>
+            <returns></returns>
+        </member>
         <member name="M:WeatherMonitor.Web.Controllers.WeatherEntriesController.GetWeatherEntryById(System.Int32)">
             <summary>
             Get WeatherEntry by Id

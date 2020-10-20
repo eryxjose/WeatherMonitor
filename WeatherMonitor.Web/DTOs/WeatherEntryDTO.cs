@@ -13,7 +13,6 @@ namespace WeatherMonitor.Web.DTOs
         public DateTime CreatedDate { get; set; }
         public string WeatherJson { get; set; }
 
-        public virtual CityDTO City { get; set; }
     }
 
     public class WeatherEntryCreateDTO

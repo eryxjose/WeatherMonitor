@@ -10,8 +10,6 @@ namespace WeatherMonitor.Web.DTOs
     {
         public int Id { get; set; }
         public int Name { get; set; }
-
-        public virtual List<WeatherEntryDTO> WeatherEntries { get; set; }
     }
 
     public class CityCreateDTO

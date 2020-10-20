@@ -51,6 +51,31 @@ namespace WeatherMonitor.Web.Controllers
         }
 
         /// <summary>
+        /// Return weather entries by city and period
+        /// </summary>
+        /// <param name="city"></param>
+        /// <param name="startDate"></param>
+        /// <param name="endDate"></param>
+        /// <returns></returns>
+        [HttpGet("{city},{startDate:datetime},{endDate:datetime}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public async Task<IActionResult> GetByCityAndPeriod(string city, DateTime startDate, DateTime endDate)
+        {
+            try
+            {
+                var entries = await _repo.FindByCityAndPeriod(city, startDate, endDate);
+                var response = _mapper.Map<IList<WeatherEntryDTO>>(entries);
+                return Ok(response);
+            }
+            catch (Exception ex)
+            {
+                return InternalError($"{ex.Message} - {ex.InnerException}");
+            }
+        }
+
+        /// <summary>
         /// Get WeatherEntry by Id
         /// </summary>
         /// <param name="id"></param>

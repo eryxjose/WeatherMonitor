@@ -36,6 +36,15 @@ namespace WeatherMonitor.Web.Services
             return recs;
         }
 
+        public async Task<IList<WeatherEntry>> FindByCityAndPeriod(string city, DateTime start, DateTime end)
+        {
+            var result = await (from w in _db.WeatherEntries.Include(o => o.City)
+                                where w.City.Name == city && w.CreatedDate > start && w.CreatedDate < end
+                                select w).ToListAsync();
+            
+            return result;
+        }
+
         public async Task<WeatherEntry> FindById(int id)
         {
             var rec = await _db.WeatherEntries.FindAsync(id);

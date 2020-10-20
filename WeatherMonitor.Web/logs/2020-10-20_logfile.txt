@@ -1,0 +1,150 @@
+2020-10-20 00:21:50.3250 ERROR Error mapping types.
+
+Mapping types:
+Object -> IList`1
+System.Object -> System.Collections.Generic.IList`1[[WeatherMonitor.Web.DTOs.WeatherEntryDTO, WeatherMonitor.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] - AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+WeatherEntry -> WeatherEntryDTO
+WeatherMonitor.Web.Models.WeatherEntry -> WeatherMonitor.Web.DTOs.WeatherEntryDTO
+
+Type Map configuration:
+WeatherEntry -> WeatherEntryDTO
+WeatherMonitor.Web.Models.WeatherEntry -> WeatherMonitor.Web.DTOs.WeatherEntryDTO
+
+Destination Member:
+City
+
+ ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+City -> CityDTO
+WeatherMonitor.Web.Models.City -> WeatherMonitor.Web.DTOs.CityDTO
+
+Type Map configuration:
+City -> CityDTO
+WeatherMonitor.Web.Models.City -> WeatherMonitor.Web.DTOs.CityDTO
+
+Destination Member:
+Name
+
+ ---> System.FormatException: Input string was not in a correct format.
+   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
+   at System.Number.ParseInt32(ReadOnlySpan`1 value, NumberStyles styles, NumberFormatInfo info)
+   at lambda_method(Closure , City , CityDTO , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , City , CityDTO , ResolutionContext )
+   at lambda_method(Closure , Object , IList`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , IList`1 , ResolutionContext )
+2020-10-20 00:31:45.7190 ERROR Error mapping types.
+
+Mapping types:
+Object -> IList`1
+System.Object -> System.Collections.Generic.IList`1[[WeatherMonitor.Web.DTOs.WeatherEntryDTO, WeatherMonitor.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] - AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+WeatherEntry -> WeatherEntryDTO
+WeatherMonitor.Web.Models.WeatherEntry -> WeatherMonitor.Web.DTOs.WeatherEntryDTO
+
+Type Map configuration:
+WeatherEntry -> WeatherEntryDTO
+WeatherMonitor.Web.Models.WeatherEntry -> WeatherMonitor.Web.DTOs.WeatherEntryDTO
+
+Destination Member:
+City
+
+ ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+City -> CityDTO
+WeatherMonitor.Web.Models.City -> WeatherMonitor.Web.DTOs.CityDTO
+
+Type Map configuration:
+City -> CityDTO
+WeatherMonitor.Web.Models.City -> WeatherMonitor.Web.DTOs.CityDTO
+
+Destination Member:
+Name
+
+ ---> System.FormatException: Input string was not in a correct format.
+   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
+   at lambda_method(Closure , Object , IList`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , IList`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , IList`1 , ResolutionContext )
+2020-10-20 00:36:00.9394 ERROR Error mapping types.
+
+Mapping types:
+Object -> IList`1
+System.Object -> System.Collections.Generic.IList`1[[WeatherMonitor.Web.DTOs.WeatherEntryDTO, WeatherMonitor.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] - AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+WeatherEntry -> WeatherEntryDTO
+WeatherMonitor.Web.Models.WeatherEntry -> WeatherMonitor.Web.DTOs.WeatherEntryDTO
+
+Type Map configuration:
+WeatherEntry -> WeatherEntryDTO
+WeatherMonitor.Web.Models.WeatherEntry -> WeatherMonitor.Web.DTOs.WeatherEntryDTO
+
+Destination Member:
+City
+
+ ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+City -> CityDTO
+WeatherMonitor.Web.Models.City -> WeatherMonitor.Web.DTOs.CityDTO
+
+Type Map configuration:
+City -> CityDTO
+WeatherMonitor.Web.Models.City -> WeatherMonitor.Web.DTOs.CityDTO
+
+Destination Member:
+Name
+
+ ---> System.FormatException: Input string was not in a correct format.
+   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
+   at lambda_method(Closure , Object , IList`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , IList`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , IList`1 , ResolutionContext )
+2020-10-20 00:36:26.6694 ERROR Error mapping types.
+
+Mapping types:
+Object -> IList`1
+System.Object -> System.Collections.Generic.IList`1[[WeatherMonitor.Web.DTOs.WeatherEntryDTO, WeatherMonitor.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] - AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+WeatherEntry -> WeatherEntryDTO
+WeatherMonitor.Web.Models.WeatherEntry -> WeatherMonitor.Web.DTOs.WeatherEntryDTO
+
+Type Map configuration:
+WeatherEntry -> WeatherEntryDTO
+WeatherMonitor.Web.Models.WeatherEntry -> WeatherMonitor.Web.DTOs.WeatherEntryDTO
+
+Destination Member:
+City
+
+ ---> AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+City -> CityDTO
+WeatherMonitor.Web.Models.City -> WeatherMonitor.Web.DTOs.CityDTO
+
+Type Map configuration:
+City -> CityDTO
+WeatherMonitor.Web.Models.City -> WeatherMonitor.Web.DTOs.CityDTO
+
+Destination Member:
+Name
+
+ ---> System.FormatException: Input string was not in a correct format.
+   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
+   at lambda_method(Closure , Object , IList`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , IList`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , IList`1 , ResolutionContext )
