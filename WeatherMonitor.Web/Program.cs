@@ -18,7 +18,6 @@ namespace WeatherMonitor.Web
 {
     public class Program
     {
-        private static Timer aTimer;
 
         public static void Main(string[] args)
         {
@@ -41,20 +40,5 @@ namespace WeatherMonitor.Web
                     
                 });
 
-        //private static void SetRequestInterval()
-        //{
-        //    aTimer = new System.Timers.Timer();
-        //    aTimer.Interval = 26000; // 
-        //    aTimer.Elapsed += OnTimedEvent;
-        //    aTimer.AutoReset = true;
-        //    aTimer.Enabled = true;
-        //}
-
-        //private static void OnTimedEvent(Object source, System.Timers.ElapsedEventArgs e)
-        //{
-            
-        //    //var service = new UpdateService();
-        //    //Console.WriteLine("The Elapsed event was raised at {0}", e.SignalTime);
-        //}
     }
 }
