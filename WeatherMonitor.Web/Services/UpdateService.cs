@@ -50,7 +50,7 @@ namespace WeatherMonitor.Web.Services
                         dbContext.WeatherEntries.Add(weatherEntry);
                     }
                     dbContext.SaveChanges();
-                    await Task.Delay(1 * 60 * 1000, cancellationToken);
+                    await Task.Delay(10 * 60 * 1000, cancellationToken);
                 }
             }
         }
